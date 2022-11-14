@@ -14,15 +14,6 @@ function setRem() {
 
 }
 
-
-
-// //防抖
-// window.onresize = function() {
-//     clearTimeout(timer);
-//     timer = setTimeout(setRem, 500)
-// }
-
-// 节流
 var flg = true;
 window.onresize = function() {
     if (flg) {
