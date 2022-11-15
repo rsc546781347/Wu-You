@@ -18,7 +18,10 @@
   height: 5rem;
 }
 .box .header > img {
-  width: 11rem;
+  width: 12rem;
+}
+.box .header .pic {
+  padding: 0.3rem 0;
 }
 .box .header .pic img {
   width: 2.8rem;

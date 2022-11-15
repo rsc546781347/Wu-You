@@ -6,13 +6,118 @@
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #F5F5F5;
+}
 .box{
     width: 100%;
     margin: 0 auto;
     max-width: 700px;
     min-width: 300px;
-    .iframeone{
+    // .iframeone{
+    //     width: 100%;
+    //     height: 5rem;
+    //     position: absolute;
+    // }
+
+    header{
         width: 100%;
-        height: 5rem;
+        position: relative;
+        &>img{
+            width: 100%;
+        }
+
+        .pic{
+            position: absolute;
+            top: 1.5rem;
+            right: 0rem;
+
+            a{
+                float: right;
+                width: 3.5rem;
+                height: 3.5rem;
+                margin-right: 1.6rem;
+                background-color: rgb(13, 243, 71);
+                line-height: 7rem;
+                font-size: 1.4rem;
+                color: #fff;
+                &:nth-of-type(1){
+                    background: url(../image/my/down.png) no-repeat 0.5rem 0rem;
+                    background-size: 1.7rem;
+                }
+                &:nth-of-type(2){
+                    background: url(../image/my/urse.png) no-repeat 0.5rem 0rem;
+                    background-size: 1.7rem;
+                }
+            }
+        }
+
+        .pic2{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-70%);
+            width: 6.5rem;
+            height: 6.5rem;
+        }
+
+        &>a{
+            width: 7.5rem;
+            height: 3.5rem;
+            border:1px solid #fff ;
+            color: #fff;
+            text-align: center;
+            line-height: 3.5rem;
+            font-size: 1.4rem;
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    main{
+        margin-top: 1.2rem;
+        background: #ffffff;
+        padding: 0 2rem;
+        ul{
+            li{
+                height: 5.5rem;
+                line-height: 5.5rem;
+                border-bottom: 1px solid #dcdcdc;
+                background: url(../image/my/right.png) no-repeat right center ;
+                background-size: 0.8rem;
+                a{
+                    color: #666;
+                    font-size: 1.4rem;
+                }
+                span{
+                    display: inline-block;
+                    width: 1.8rem;
+                    height: 1.8rem;              
+                }
+
+                &:nth-of-type(1) span{
+                    background: url(../image/my/icon1.png) no-repeat center center;
+                    background-size: contain;
+                }
+                &:nth-of-type(2) span{
+                    background: url(../image/my/icon2.png) no-repeat center center;
+                    background-size: contain;
+                }
+                &:nth-of-type(3) span{
+                    background: url(../image/my/icon3.png) no-repeat center center;
+                    background-size: contain;
+                }
+                &:nth-of-type(4) span{
+                    background: url(../image/my/icon4.png) no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
     }
 }

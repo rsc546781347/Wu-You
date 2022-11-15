@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #F5F5F5;
+}
+.box {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 625px;
+  min-width: 300px;
+}
+.box .iframeone {
+  width: 100%;
+  height: 5rem;
+  float: left;
+}
+.box .header-t {
+  float: left;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #c5c5c5;
+  padding-left: 1.5rem;
+}
+.box .header-t h3 {
+  font-size: 1.4rem;
+}
+.box .header-t h3 span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.box header {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.box header > img {
+  width: 100%;
+}
+.box header .pic2 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.box header > a {
+  color: #fff;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.box main {
+  margin-top: 1.2rem;
+  background: #ffffff;
+  padding: 0 2rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.box main ul li {
+  height: 5.5rem;
+  line-height: 5.5rem;
+  border-bottom: 1px solid #dcdcdc;
+  background: url(../image/my/right.png) no-repeat right center;
+  background-size: 0.8rem;
+}
+.box main ul li a {
+  color: #666;
+  font-size: 1.4rem;
+}
+.box main ul li:nth-of-type(3) {
+  border: none;
+}
+.box .btm {
+  width: 35.5rem;
+  height: 5rem;
+  background: #ffffff;
+  color: #ff8a00;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  line-height: 5rem;
+  margin: 3rem 1rem;
+  font-size: 1.6rem;
+}
