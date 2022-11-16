@@ -15,7 +15,7 @@ body {
 .box {
   width: 100%;
   margin: 0 auto;
-  max-width: 625px;
+  max-width: 700px;
   min-width: 300px;
 }
 .box .iframeone {
@@ -84,8 +84,8 @@ body {
   font-size: 1.4rem;
 }
 .box .tab .ipt2 li .sp {
-  width: 10rem;
-  height: 4.1rem;
+  width: 8.5rem;
+  height: 4rem;
   margin-top: 0.6rem;
   float: right;
   border: 0.1rem solid #C5C5C5;
@@ -95,7 +95,7 @@ body {
   font-size: 1.4rem;
   color: #757575;
 }
-.box .ipt {
+.box .ipts {
   width: 35.5rem;
   height: 5.8rem;
   background: #ff8a00;

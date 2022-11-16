@@ -16,11 +16,22 @@
         <div class="header">
             <img src="./image/index/logo.jpg" alt="">
             <div class="pic">
-                <a href=""><img src="./image/index/my.jpg" alt=""></a>
-                <a href=""><img src="./image/index/xiazai.jpg" alt=""></a>
+                <a class="top1_a"><img src="./image/index/my.jpg" alt=""></a>
+                <a class="top2_a"><img src="./image/index/xiazai.jpg" alt=""></a>
             </div>
         </div>
     </div>
 </body>
 
 </html>
+<script>
+    var top1_a = document.getElementsByClassName('top1_a')[0];
+    var top2_a = document.getElementsByClassName('top2_a')[0];
+
+    top1_a.onclick = function() {
+        parent.location.href = './my.html';
+    }
+    top2_a.onclick = function() {
+        parent.location.href = 'https://www.baidu.com/';
+    }
+</script>

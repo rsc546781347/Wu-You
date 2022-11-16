@@ -20,7 +20,7 @@
         <header>
             <img src="./image/my/bg2.png" alt="">
             <img src="./image/my/urse2.png" alt="" class="pic2">
-            <a href="">欢迎你，18686868686</a>
+            <a href="" class="name">欢迎你，xxxxxxxxxxx</a>
         </header>
         <main>
             <ul>
@@ -28,20 +28,32 @@
                     <a href="">我关注的房源</a>
                 </li>
                 <li>
-
                     <a href="">我关注的小区</a>
                 </li>
                 <li>
-
                     <a href="">我关注的新房</a>
                 </li>
             </ul>
         </main>
 
         <div class="btm">
-            退出登录
+            <a href="./my.html">退出登录</a>
         </div>
     </div>
 </body>
 
 </html>
+
+<script src="./js/myCookie.js"></script>
+<script>
+    // 显示用户信息
+
+    var name_ = document.getElementsByClassName('name')[0];
+    var tel_ = getCookie('tel');
+    var name = getCookie('name');
+    // console.log( tel_);
+    if (name == 'true') {
+
+        name_.innerHTML = '欢迎你，' + tel_;
+    }
+</script>

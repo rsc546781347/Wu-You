@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  background-color: #F5F5F5;
+}
+.box {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 300px;
+  /*头部照片部分 */
+  /*关注部分*/
+  /*租房详情部分*/
+  /*中间部分*/
+  /*经纪人房评*/
+  /*个人信息部分*/
+}
+.box .iframeone {
+  width: 100%;
+  height: 5rem;
+  float: left;
+}
+.box .iframetwo {
+  width: 100%;
+  height: 23rem;
+}
+.box .header-t {
+  float: left;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4rem;
+  background: #fff;
+  border-bottom: 0.1rem solid #c5c5c5;
+  padding-left: 1.5rem;
+}
+.box .header-t h3 {
+  font-size: 1.4rem;
+}
+.box .header-t h3 span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.box .pic {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.box .pic > img {
+  width: 100%;
+}
+.box .pic .share {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  background: rgba(39, 12, 12, 0.8);
+  width: 7rem;
+  height: 4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+  border-radius: 1rem 0 0 1rem;
+  font-size: 1.4rem;
+}
+.box .concern {
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  background-color: #fff;
+  border-bottom: 0.1rem solid #DCDCDC;
+}
+.box .concern h2 {
+  width: 80%;
+  font-size: 2rem;
+  padding: 1.5rem 0 0 1.5rem;
+  border-right: 0.1rem solid #DCDCDC;
+}
+.box .concern p {
+  width: 20%;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 10rem;
+  background: url(../image/rentalList/xin.png) no-repeat 2.5rem 1.5rem;
+  background-size: 2.3rem;
+}
+.box .details .one {
+  display: flex;
+  padding: 4rem 0;
+}
+.box .details .one li {
+  width: 33.33%;
+  border-right: 0.1rem solid #DCDCDC;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.box .details .one li span {
+  display: block;
+  color: #ff8a00;
+  padding-top: 0.8rem;
+}
+.box .details .two {
+  background-color: #fff;
+  padding: 0 2.5rem;
+}
+.box .details .two li {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  border-bottom: 0.1rem solid #DCDCDC;
+  font-size: 1.4rem;
+}
+.box .details .two li p {
+  width: 50%;
+}
+.box .center ul {
+  margin: 1rem;
+  background: #fff;
+  border: 0.1rem #DCDCDC solid;
+  /*位置及周边*/
+}
+.box .center ul li:nth-of-type(1) {
+  height: 5.5rem;
+  line-height: 5.5rem;
+  color: #ff8a00;
+  background: url(../image/rentalList/right.png) no-repeat right 1.6rem center;
+  background-size: 0.7rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #dcdcdc;
+  font-weight: bold;
+  padding: 0rem 1.6rem;
+}
+.box .center ul li:nth-of-type(2) {
+  padding: 1rem 1.6rem;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+.box .center ul .place {
+  border: 0.1rem #DCDCDC solid;
+}
+.box .center ul .place h3 {
+  border-bottom: 0.1rem solid #DCDCDC;
+  line-height: 4rem;
+}
+.box .center ul .place .map {
+  height: 17.1rem;
+}
+.box .center ul .place .map img {
+  width: 100%;
+  height: 100%;
+}
+.box .center ul:nth-of-type(4) p:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+.box .name {
+  display: flex;
+  padding: 1rem 0rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+.box .name > img {
+  width: 5rem;
+  margin: 0 1.5rem 0 1.6rem;
+}
+.box .name .txt {
+  width: 45%;
+}
+.box .name .icon {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.box .name .icon span {
+  display: inline-block;
+  width: 6.5rem;
+  height: 100%;
+  color: #5baede;
+  padding-top: 3.2rem;
+  background: url(../image/rentalList/icon2.png) no-repeat 0 0;
+  background-size: 3rem;
+}
+.box .name .icon span:nth-of-type(1) {
+  color: #5BAEDE;
+  background: url(../image/rentalList/icon1.png) no-repeat 0 0;
+  background-size: 3rem;
+}

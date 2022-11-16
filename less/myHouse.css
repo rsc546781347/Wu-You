@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 300px;
+  background-color: #F5F5F5;
+}
+.box .iframeone {
+  width: 100%;
+  height: 5rem;
+  float: left;
+}
+.box .header-t {
+  float: left;
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4rem;
+  background: #fff;
+  border-bottom: 0.1rem solid #c5c5c5;
+  padding-left: 1.5rem;
+}
+.box .header-t h3 {
+  font-size: 1.4rem;
+}
+.box .header-t h3 span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.box ul {
+  padding: 0 2.5rem;
+  overflow: hidden;
+}
+.box ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #ff8a00;
+}
+.box ul li .pic {
+  width: 10rem;
+  height: 9.5rem;
+}
+.box ul li .pic img {
+  width: 100%;
+  height: 100%;
+}
+.box ul li .text {
+  height: 9.5rem;
+  width: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box ul li .text h3 {
+  font-size: 1.6rem;
+}
+.box ul li .text p {
+  font-size: 1.4rem;
+}
+.box ul li .text p:nth-of-type(2) span {
+  color: #ff8a00;
+  margin-left: 2rem;
+  font-weight: 600;
+}
