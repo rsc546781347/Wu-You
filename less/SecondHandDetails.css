@@ -24,18 +24,18 @@ body {
 }
 .box .iframeone {
   width: 100%;
-  height: 5.8rem;
-  float: left;
+  height: 6rem;
 }
 .box > .img {
   width: 100%;
   position: relative;
+  top: -1.2rem;
 }
 .box > .img > a > img {
   width: 100%;
-  float: left;
 }
 .box > .img > .pages {
+  overflow: hidden;
   width: 6.1rem;
   height: 2.6rem;
   position: absolute;
@@ -51,6 +51,7 @@ body {
   line-height: 2.6rem;
 }
 .box > .message {
+  overflow: hidden;
   padding: 2.2rem;
   background-color: white;
   border-bottom: 0.1rem solid #e5e5e5;
@@ -170,13 +171,14 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
+  margin-left: 1rem;
 }
 .box > .message4 > ul > li > .right > h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .box > .message4 > ul > li > .right > p {
   line-height: 3.8rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .box > .message4 > ul > li > .right > p:last-of-type span {
   margin-top: 0.3rem;
@@ -273,6 +275,7 @@ body {
 }
 .box > .housing > .houseList > li > .text {
   line-height: 3.3rem;
+  margin-left: 1rem;
 }
 .box > .housing > .houseList > li > .text > p {
   font-size: 1.82rem;
@@ -281,8 +284,8 @@ body {
   overflow: hidden;
 }
 .box > .housing > .houseList > li > .text > h3 {
-  font-size: 2.7rem;
-  width: 28rem;
+  font-size: 1.8rem;
+  width: 22rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -309,7 +312,7 @@ body {
   background: #f2f2f2;
   width: 98%;
   padding: 1.1rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .box > .housing > .houseList > li > .tips > span {
   position: absolute;
@@ -327,7 +330,7 @@ body {
 .box > .housing > .more {
   padding: 2.5rem;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .box > .housing > .more > a {
   color: #666666;
@@ -343,15 +346,15 @@ body {
 }
 .box > .agent > a:nth-of-type(1) {
   display: inline-block;
-  width: 30rem;
+  width: 23rem;
   height: 5.4rem;
   line-height: 5.4rem;
   text-align: center;
-  background: #ff8a00 url(../image/SecondHandList/user.png) 5.3rem center no-repeat;
+  background: #ff8a00 url(../image/SecondHandList/user.png) 2.3rem center no-repeat;
   background-size: -1.25rem 0.25rem;
   color: #fff;
   border-radius: 7px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .box > .agent > a:last-of-type {
   display: inline-block;
@@ -359,7 +362,7 @@ body {
   line-height: 3.4rem;
   background: url(../image/SecondHandList/xin.png) 0 center no-repeat;
   background-size: -0.75rem 0.25rem;
-  padding-left: 4.3rem;
+  padding-left: 5rem;
   margin-left: 2.1rem;
   font-size: 1.5rem;
   color: #666666;
