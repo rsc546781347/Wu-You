@@ -30,6 +30,9 @@ li {
   height: 6rem;
   float: left;
 }
+.box .nob a {
+  color: #000;
+}
 .box > .search {
   display: inline-block;
   width: 100%;

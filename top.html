@@ -14,7 +14,7 @@
 <body>
     <div class="box">
         <div class="header">
-            <img src="./image/index/logo.jpg" alt="">
+            <img src="./image/index/logo.jpg" alt="" class="top_pic">
             <div class="pic">
                 <a class="top1_a"><img src="./image/index/my.jpg" alt=""></a>
                 <a class="top2_a"><img src="./image/index/xiazai.jpg" alt=""></a>
@@ -24,14 +24,35 @@
 </body>
 
 </html>
+<script src="./js/myCookie.js"></script>
 <script>
     var top1_a = document.getElementsByClassName('top1_a')[0];
     var top2_a = document.getElementsByClassName('top2_a')[0];
 
-    top1_a.onclick = function() {
-        parent.location.href = './my.html';
+    // 判断登录成功或者有没有用户信息跳转不同页面
+
+    var name = getCookie('name');
+    if (name == 'true') {
+        top1_a.onclick = function() {
+            parent.location.href = './myMessage.html';
+        }
+    } else {
+        top1_a.onclick = function() {
+            parent.location.href = './my.html';
+        }
     }
+
+
+
     top2_a.onclick = function() {
         parent.location.href = 'https://www.baidu.com/';
+    }
+
+
+
+    // 点击logo跳首页
+    var top_pic = document.getElementsByClassName('top_pic')[0];
+    top_pic.onclick = function() {
+        parent.location.href = './index.html';
     }
 </script>

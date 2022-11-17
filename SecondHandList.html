@@ -14,15 +14,7 @@
     <!-- 头部 -->
     <div class="box">
         <iframe src="./top.html" class="iframeone" frameborder="0"></iframe>
-        <!-- <div class="header">
-            <div class="logo">
-                <a href="./index.html"><img src="./image/index/logo.jpg"></a>
-            </div>
-            <div class="my">
-                <a href="#"><img src="./image/index/my.jpg"></a>
-                <a href="#"><img src="./image/index/xiazai.jpg"></a>
-            </div>
-        </div> -->
+
         <!-- 搜索框 -->
         <div class="search">
             <input type="text" placeholder="请输入小区名或商圈名称">
@@ -216,3 +208,15 @@
 </html>
 <script src="./js/setRem.js"></script>
 <script src="./js/SecondHandList.js"></script>
+<script src="./js/touch.min.js"></script>
+<script>
+    // 滑动切换页面
+    var body = document.getElementsByTagName('body')[0];
+    touch.on(body, 'swipeleft', function() {
+        location.href = './SecondHandDetails.html';
+    })
+
+    touch.on(body, 'swiperight', function() {
+        location.href = './houseMessage.html';
+    })
+</script>

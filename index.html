@@ -14,15 +14,7 @@
     <div class="box">
         <!-- 顶部 -->
         <iframe src="./top.html" class="iframeone" frameborder="0"></iframe>
-        <!-- <div class="header">
-        <div class="logo">
-            <a href="#"><img src="./image/index/logo.jpg"></a>
-        </div>
-        <div class="my">
-            <a href="#"><img src="./image/index/my.jpg"></a>
-            <a href="#"><img src="./image/index/xiazai.jpg"></a>
-        </div>
-    </div> -->
+
         <!-- 背景大图 -->
         <div class="setting">
             <form action="#" method="get">
@@ -141,6 +133,7 @@
 </html>
 <script src="./js/setRem.js"></script>
 <script src="./js/touch.min.js"></script>
+<!-- <script src="./js/myCookie.js"></script> -->
 <!-- 点击 -->
 <script>
     var close = document.getElementById('close');
@@ -150,8 +143,12 @@
     }
 
 
+    // 滑动切换页面
     var body = document.getElementsByTagName('body')[0];
-    touch.on(body, 'swiperight', function() {
+    touch.on(body, 'swipeleft', function() {
         location.href = './myHouse.html';
+    })
+    touch.on(body, 'swiperight', function() {
+        location.href = './SecondHandDetails.html';
     })
 </script>

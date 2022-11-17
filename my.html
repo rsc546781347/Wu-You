@@ -17,8 +17,8 @@
         <header>
             <img src="./image/my/bg1.png" alt="">
             <div class="pic">
-                <a href="">APP</a>
-                <a href="">我的</a>
+                <a class="top2_a">APP</a>
+                <a class="top1_a">我的</a>
             </div>
             <img src="./image/my/urse2.png" alt="" class="pic2">
             <a href="./login.html">登录</a>
@@ -27,19 +27,19 @@
             <ul>
                 <li>
                     <span></span>
-                    <a href="">我关注的房源</a>
+                    <a href="./rentalHouse.html">我关注的房源</a>
                 </li>
                 <li>
                     <span></span>
-                    <a href="">我关注的小区</a>
+                    <a href="./myHouse.html">我关注的小区</a>
                 </li>
                 <li>
                     <span></span>
-                    <a href="">我关注的新房</a>
+                    <a href="./SecondHandList.html">我关注的新房</a>
                 </li>
                 <li>
                     <span></span>
-                    <a href="">我的看房记录</a>
+                    <a href="./SecondHandDetails.html">我的看房记录</a>
                 </li>
             </ul>
         </main>
@@ -48,5 +48,27 @@
 
 </html>
 
+<script src="./js/myCookie.js"></script>
 <script>
+    var top1_a = document.getElementsByClassName('top1_a')[0];
+    var top2_a = document.getElementsByClassName('top2_a')[0];
+
+    // 判断登录成功或者有没有用户信息跳转不同页面
+
+    var name = getCookie('name');
+    if (name == 'true') {
+        top1_a.onclick = function() {
+            parent.location.href = './myMessage.html';
+        }
+    } else {
+        top1_a.onclick = function() {
+            parent.location.href = './my.html';
+        }
+    }
+
+
+    // 点击下载
+    top2_a.onclick = function() {
+        parent.location.href = 'https://www.baidu.com/';
+    }
 </script>

@@ -15,7 +15,7 @@
     <div class="box">
         <iframe src="./top.html" class="iframeone" frameborder="0"></iframe>
         <div class="header-t">
-            <h3>首页<span> > 我的</span></h3>
+            <h3><a href="./index.html">首页</a><span> > 我的</span></h3>
         </div>
         <header>
             <img src="./image/my/bg2.png" alt="">
@@ -25,19 +25,19 @@
         <main>
             <ul>
                 <li>
-                    <a href="">我关注的房源</a>
+                    <a href="./SecondHandList.html">我关注的房源</a>
                 </li>
                 <li>
-                    <a href="">我关注的小区</a>
+                    <a href="./myHouse.html">我关注的小区</a>
                 </li>
                 <li>
-                    <a href="">我关注的新房</a>
+                    <a href="./SecondHandList.html">我关注的新房</a>
                 </li>
             </ul>
         </main>
 
         <div class="btm">
-            <a href="./my.html">退出登录</a>
+            <a>退出登录</a>
         </div>
     </div>
 </body>
@@ -53,7 +53,13 @@
     var name = getCookie('name');
     // console.log( tel_);
     if (name == 'true') {
-
         name_.innerHTML = '欢迎你，' + tel_;
+    }
+
+    var btm = document.getElementsByClassName('btm')[0];
+    btm.onclick = function() {
+        // 删除之前存储的
+        removeCookie('name');
+        location.href = './login.html';
     }
 </script>

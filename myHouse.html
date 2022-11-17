@@ -15,7 +15,7 @@
     <div class="box">
         <iframe src="./top.html" class="iframeone" frameborder="0"></iframe>
         <div class="header-t">
-            <h3>首页<span> > 我的 > 我关注的小区</span></h3>
+            <h3><a href="./index.html">首页</a><span> > 我的 > 我关注的小区</span></h3>
         </div>
         <ul>
             <li>
@@ -72,3 +72,15 @@
 </body>
 
 </html>
+<script src="./js/touch.min.js"></script>
+<script>
+    // 滑动切换页面
+    var body = document.getElementsByTagName('body')[0];
+    touch.on(body, 'swipeleft', function() {
+        location.href = './rentalHouse.html';
+    })
+
+    touch.on(body, 'swiperight', function() {
+        location.href = './index.html';
+    })
+</script>

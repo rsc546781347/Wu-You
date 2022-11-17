@@ -15,7 +15,7 @@
     <div class="box">
         <iframe src="./top.html" class="iframeone" frameborder="0"></iframe>
         <div class="header-t">
-            <h3>首页<span> > 北京租房 > 房源信息</span></h3>
+            <h3><a href="./index.html">首页</a><span> > 北京租房 > 房源信息</span></h3>
         </div>
         <!-- 头部照片部分 -->
         <div class="pic">
@@ -110,7 +110,18 @@
     </div>
 </body>
 
-
-
-
 </html>
+
+
+<script src="./js/touch.min.js"></script>
+<script>
+    // 滑动切换页面
+    var body = document.getElementsByTagName('body')[0];
+    touch.on(body, 'swipeleft', function() {
+        location.href = './SecondHandList.html';
+    })
+
+    touch.on(body, 'swiperight', function() {
+        location.href = './rentalHouse.html';
+    })
+</script>
